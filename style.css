@@ -1,16 +1,19 @@
 :root {
-    --dark-gray:hsl(0, 0%, 59%);
+    /* primary */
     --dark-desaturated-blue: hsl(229, 23%, 23%);
     --Dark-grayish-blue: hsl(227, 10%, 46%);
-    --dark-gray:hsl(0, 0%, 59%);
     --background:hsl(185, 75%, 39%);
 
+    /* neutral */
+    --dark-gray:hsl(0, 0%, 59%);
+
+    /* background-circles positioning */
     --top-bottom-diff: -50vh;
     --left-right-diff:-50vw;
 }
 
-/* Dependancy classes */
-.inline-block {
+/* --------- Dependancy classes --------- */
+.d-inline-block {
     display: inline-block;
 }
 
@@ -35,14 +38,22 @@
 }
 
 .border-top-gray {
-    border-top:1px solid rgb(187, 184, 184);
+    border-top:1px solid var(--dark-gray);
 }
 
 .color-gray {
-    color:rgb(187, 184, 184);
+    color:var(--dark-gray);
 }
 
-/*Container stylings  */
+.color-navy {
+    color:var(--dark-desaturated-blue);
+}
+
+.drop-shadow {
+    filter: drop-shadow(0 0 0.1em var(--dark-gray));
+}
+
+/* --------- Container stylings  --------- */
 body {
     margin:0;
     padding:0;
@@ -60,13 +71,12 @@ body {
 }
 
 .card {
-    width:600px;
+    /* width:600px; */ /** width - set up in mediaQueries.css */
     background-color:whitesmoke;
     border-radius: 15px;
     overflow: hidden;
     font-family: 'Kumbh Sans', sans-serif;
     z-index:3;
-    
 }
 
 .card-bg {
@@ -75,9 +85,9 @@ body {
     height:180px;
 }
 
-/* avatar */
+/* --------- avatar --------- */
 .avatar-container {
-    margin-top:-60px;
+    margin-top:-70px;
 }
 
 .avatar-container > img {
@@ -86,18 +96,20 @@ body {
     width: 130px;
 }
 
-/* Personal info section */
+
+/* --------- Personal info section --------- */
 .personal-info {
-    padding:25px 0;
+    padding:15px 0 30px 0;
 }
 
 .personal-info > span:last-child {
     padding-top: 10px;
 }
 
-/* numbers section */
+
+/* --------- numbers info section --------- */
 .about-number {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -106,21 +118,25 @@ body {
 }
 
 .about-label {
-    font-size: 13px;
+    font-size: 11px;
+    padding-top: 5px;
+    letter-spacing: 2px;
 }
 
-/* flex classes */
-.flex {
+
+/* --------- flex classes --------- */
+.number-section {
     display: flex;
     justify-content: space-around;
     padding:30px 0;
 }
 
-.flex > div {
+.number-section > div {
     flex:1;
 }
 
-/* background circles */
+
+/* ---------  background circles  --------- */
 #top-circle {
     background:url('images/bg-pattern-top.svg') no-repeat bottom right/cover;
     top:var(--top-bottom-diff);
@@ -136,8 +152,10 @@ body {
 }
 
 #top-circle, #bottom-circle {
-    height:100vh;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
+    /* height:100vh;
+    width: 100vw; */
     position: absolute;
     z-index: 1;
 }

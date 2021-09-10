@@ -5,64 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zadatak 1</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon-32x32.png" sizes="16x16" type="image/png">
+    
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaQueries.css">
     
 </head>
 <body>
-    <!-- <div id="layout"> -->
-        <!-- top cirlce -->
+    <div class="container">
+        
+        <!-- top circle -->
+        <div id="top-circle"></div>
         
         <!-- Content -->
-        <div class="container">
-            <div id="top-circle"></div>
-            <div class="card center">
-                <!-- Card top background -->
-                <div class="card-bg"></div>
-                
-                <!-- Avatar -->
-                <div class="avatar-container">
-                    <img src="images/image-victor.jpg" alt="profile picture">
-                </div>
-                
-                <!-- Personal info -->
-                <div class="personal-info">
-                    <h3 class='inline-block m-0'>
-                        <span>Victor Crest</span>
-                        <span class="color-gray font-weight-regular">26</span>
-                    </h3>
-                    
-                    <span class="color-gray d-block">London</span>
-                </div>
-                
-                <!-- Numbers -->
-                <div class="flex border-top-gray">
-                    <div>
-                        <div class="about-number">80</div>
-                        <div class="about-label color-gray">Followers</div>
-                    </div>
-                    
-                    <div>
-                        <div class="about-number">803</div>
-                        <div class="about-label color-gray">Likes</div>
-                    </div>
-                    
-                    <div>
-                        <div class="about-number">1.4</div>
-                        <div class="about-label color-gray">Photos</div>
-                    </div>
-                </div>
-                
+        <div class="card center drop-shadow">
+
+            <!-- Card top background -->
+            <div class="card-bg"></div>
+            
+            <!-- Avatar -->
+            <div class="avatar-container">
+                <img src="images/image-victor.jpg" alt="profile picture">
             </div>
-            <div id="bottom-circle"></div>
+            
+            <!-- Personal info -->
+            <div class="personal-info">
+                <h3 class='d-inline-block m-0'>
+                    <span class="color-navy">Victor Crest</span> <span class="color-gray font-weight-regular"> 26</span>
+                </h3>
+                
+                <span class="color-gray d-block">London</span>
+            </div>
+            
+            <!-- Numbers info -->
+            <div class="number-section border-top-gray">
+                <div>
+                    <div class="about-number color-navy">80</div>
+                    <div class="about-label color-gray">Followers</div>
+                </div>
+                
+                <div>
+                    <div class="about-number color-navy">803</div>
+                    <div class="about-label color-gray">Likes</div>
+                </div>
+                
+                <div>
+                    <div class="about-number color-navy">1.4</div>
+                    <div class="about-label color-gray">Photos</div>
+                </div>
+            </div>
+            
         </div>
-        
-        <!-- bottom circle -->
-    <!-- </div> -->
+        <div id="bottom-circle"></div>
+    </div>
     
     
     
