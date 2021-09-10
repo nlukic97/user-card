@@ -42,7 +42,7 @@
     color:rgb(187, 184, 184);
 }
 
-/*styling  */
+/*Container stylings  */
 body {
     margin:0;
     padding:0;
@@ -83,7 +83,7 @@ body {
 .avatar-container > img {
     border-radius: 50%;
     border:5px solid #fff;
-    width: 120px;
+    width: 130px;
 }
 
 /* Personal info section */
