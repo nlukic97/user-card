@@ -4,8 +4,45 @@
     --Dark-grayish-blue: hsl(227, 10%, 46%);
     --dark-gray:hsl(0, 0%, 59%);
     --background:hsl(185, 75%, 39%);
+
+    --top-bottom-diff: -50vh;
+    --left-right-diff:-50vw;
 }
 
+/* Dependancy classes */
+.inline-block {
+    display: inline-block;
+}
+
+.d-block {
+    display: block;
+}
+
+.p-0 {
+    padding:0;
+}
+
+.m-0 {
+    margin:0;
+}
+
+.font-weight-regular {
+    font-weight: 400;
+}
+
+.center {
+    text-align:center;
+}
+
+.border-top-gray {
+    border-top:1px solid rgb(187, 184, 184);
+}
+
+.color-gray {
+    color:rgb(187, 184, 184);
+}
+
+/*styling  */
 body {
     margin:0;
     padding:0;
@@ -25,7 +62,6 @@ body {
 .card {
     width:600px;
     background-color:whitesmoke;
-    border:1px solid rgb(221, 221, 221);
     border-radius: 15px;
     overflow: hidden;
     font-family: 'Kumbh Sans', sans-serif;
@@ -59,47 +95,7 @@ body {
     padding-top: 10px;
 }
 
-/* Dependancy classes */
-
-.inline-block {
-    display: inline-block;
-}
-
-.d-block {
-    display: block;
-}
-
-.p-0 {
-    padding:0;
-}
-
-.m-0 {
-    margin:0;
-}
-
-.font-weight-regular {
-    font-weight: 400;
-}
-
-.center {
-    text-align:center;
-}
-
-.border-top-gray {
-    border-top:1px solid rgb(187, 184, 184);
-}
-
-.color-gray {
-    color:rgb(187, 184, 184);
-}
-
-
-/* some other styles */
-
-[data-location]::before{
-    content:attr(data-location);
-}
-
+/* numbers section */
 .about-number {
     font-size: 18px;
     font-weight: bold;
@@ -124,23 +120,24 @@ body {
     flex:1;
 }
 
-/* background */
+/* background circles */
 #top-circle {
     background:url('images/bg-pattern-top.svg') no-repeat bottom right/cover;
-    height:100vh;
-    width: 100vw;
-    position: absolute;
-    top:-50vh;
-    left:-60vw;
-    z-index: 1;
+    top:var(--top-bottom-diff);
+    left:var(--left-right-diff);
+    
 }
 
 #bottom-circle {
     background:url('images/bg-pattern-bottom.svg') no-repeat top left/cover;
+    bottom:var(--top-bottom-diff);;
+    right:var(--left-right-diff);
+
+}
+
+#top-circle, #bottom-circle {
     height:100vh;
     width: 100vw;
     position: absolute;
-    bottom:-50vh;
-    right:-60vw;
     z-index: 1;
 }
