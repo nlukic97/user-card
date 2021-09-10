@@ -7,15 +7,16 @@ body {
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .card {
     width:600px;
-    text-align: center;
     border:1px solid rgb(221, 221, 221);
     border-radius: 15px;
     overflow: hidden;
-    font-family: 'Roboto', sans-serif; /* change this */
+    font-family: 'Kumbh Sans', sans-serif;
     
 }
 
@@ -84,6 +85,7 @@ body {
     color:orange;
 }
 
+/* flex classes */
 .flex {
     display: flex;
     justify-content: space-around;
@@ -93,6 +95,7 @@ body {
 .flex > div {
     flex:1;
 }
+
 
 .center {
     text-align:center;
