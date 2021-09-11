@@ -92,7 +92,7 @@ body {
 
 .avatar-container > img {
     border-radius: 50%;
-    border:5px solid #fff;
+    border:6px solid #fff; /* odd number for border width adds a visible gap between the img and its border in Chrome */
     width: 130px;
 }
 
