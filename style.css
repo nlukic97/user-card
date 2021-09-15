@@ -58,6 +58,11 @@ body {
     margin:0;
     padding:0;
     box-sizing: border-box;
+
+    background:
+    url('images/bg-pattern-top.svg') no-repeat left 50vw top 50vh, 
+    url('images/bg-pattern-top.svg') no-repeat right 50vw bottom 50vh;
+    background-color: var(--background);
 }
 
 .container {
@@ -65,9 +70,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
-    position: relative;
-    background-color:var(--background);
 }
 
 .card {
@@ -76,7 +78,6 @@ body {
     border-radius: 15px;
     overflow: hidden;
     font-family: 'Kumbh Sans', sans-serif;
-    z-index:3;
 }
 
 .card-bg {
@@ -133,29 +134,4 @@ body {
 
 .number-section > div {
     flex:1;
-}
-
-
-/* ---------  background circles  --------- */
-#top-circle {
-    background:url('images/bg-pattern-top.svg') no-repeat bottom right/cover;
-    top:var(--top-bottom-diff);
-    left:var(--left-right-diff);
-    
-}
-
-#bottom-circle {
-    background:url('images/bg-pattern-bottom.svg') no-repeat top left/cover;
-    bottom:var(--top-bottom-diff);;
-    right:var(--left-right-diff);
-
-}
-
-#top-circle, #bottom-circle {
-    width: 100%;
-    height: 100%;
-    /* height:100vh;
-    width: 100vw; */
-    position: absolute;
-    z-index: 1;
 }
